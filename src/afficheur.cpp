@@ -11,12 +11,10 @@ using namespace std_msgs;
 
 // MAIN
 int main(int argc, char **argv) {
-  init(argc, argv, "obstacles_detecteur");
+  init(argc, argv, "afficheur");
   NodeHandle nh;
 
-  // subscribers ICI
 
-  //
 
   spin();
 
