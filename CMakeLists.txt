@@ -32,4 +32,14 @@ add_executable(obstacles_detecteur src/obstacles_detecteur.cpp)
 target_include_directories(obstacles_detecteur PUBLIC ${catkin_INCLUDE_DIRS})
 target_link_libraries(obstacles_detecteur ${catkin_LIBRARIES}
  ${GPIOD_LIBRARIES}) 
+
+add_executable(configurateur src/configurateur.cpp)
+target_link_libraries(configurateur ${catkin_LIBRARIES})
+add_dependencies(configurateur ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+
+add_executable(afficheur src/afficheur.cpp)
+target_link_libraries(afficheur ${catkin_LIBRARIES})
+
+ 
 #20.22
